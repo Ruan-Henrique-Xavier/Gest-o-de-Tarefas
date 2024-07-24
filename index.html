@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gestão de Tarefas</title>
+</head>
+
+<body>
+
+    <div class="header-bg">
+        <header class="header">
+            <h1 class="titulo">
+                OrganizaX
+            </h1>
+            <div class="barra-de-pesquisa">
+                <input type="text" class="input-pesquisa" id="pesquisa" placeholder="Pesquisar ID">
+                <button class="botao-pesquisar">
+                    <img style="max-width: 20px;" src="img/search.png" alt="">
+                </button>
+            </div>
+        </header>
+    </div>
+
+    <main>
+
+        <section class="container-adicionar">
+            <div class="dados-adicionar">
+                <input type="text" placeholder="Título" id="titulo">
+                <input type="text" placeholder="Descrição" id="descricao">
+            </div>
+            <button class="adicionar">
+                <img class="texto-add" style="max-width: 30px;" src="img/add.png" alt="">
+                <div class="carregando-nova"></div>
+            </button>
+        </section>
+
+        <div class="carregando"></div>
+        <section class="container-todas-tarefas">
+            <div class="container-tarefas"></div>
+        </section>
+
+        <dialog class="editar-modal-container">
+            <div class="editar-modal">
+                <h2>Editar tarefa</h2>
+                <div class="input-edit-container">
+                    <label for="titulo">Título</label>
+                    <input type="text" name="" class="titulo-editar">
+                    <label for="descricao">Descrição</label>
+
+                    <textarea class="descricao-editar" name="" id=""></textarea>
+                </div>
+                <div class="modal-botoes">
+                    <button class="salvar-edicao">Salvar</button>
+                    <button class="cancelar-edicao">Cancelar</button>
+                </div>
+            </div>
+        </dialog>
+
+    </main>
+    
+    <script src="main.js"></script>
+
+</body>
+
+</html>
